@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := cepheus
+PRODUCT_RELEASE_NAME := tucana
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,10 +23,10 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cepheus
-PRODUCT_NAME := omni_cepheus
+PRODUCT_DEVICE := tucana
+PRODUCT_NAME := omni_tucana
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Mi 9
+PRODUCT_MODEL := Xiaomi Mi Note 10
 PRODUCT_MANUFACTURER := Xiaomi
 
 # HACK: Set vendor patch level

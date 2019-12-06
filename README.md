@@ -1,7 +1,7 @@
-# android_device_xiaomi_cepheus
-For building TWRP for Xiaomi Mi 9
+# android_device_xiaomi_tucana
+For building TWRP for Xiaomi Mi Note 10
 
-TWRP device tree for Xiaomi Mi 9
+TWRP device tree for Xiaomi Mi Note 10
 
 ## Features
 
@@ -33,27 +33,25 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/cepheus" name="mauronofrio/android_device_xiaomi_cepheus" remote="github" revision="android-9.0" />
+<project path="device/xiaomi/tucana" name="mauronofrio/android_device_xiaomi_tucana" remote="github" revision="android-9.0" />
 ```
 
 Finally execute these:
 
 ```
 . build/envsetup.sh
-lunch omni_cepheus-eng
+lunch omni_tucana-eng
 mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
 ```
 
 To test it:
 
 ```
-fastboot boot out/target/product/cepheus/recovery.img
+fastboot boot out/target/product/tucana/recovery.img
 ```
 
 ## Other Sources
 
-https://github.com/LasagnaTeam/TWRP_Kernel_Cepheus
+Precompiled Stock One
 
 ## Thanks
-
-- Thanks to @PeterCxy for the commits and the base: https://github.com/PeterCxy/android_device_xiaomi_violet-twrp
